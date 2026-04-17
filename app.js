@@ -13,7 +13,7 @@ function searchTours() {
     
     tg.showLoading();
     
-    fetch('http://localhost:8080/api/tours/search', {
+    fetch(API_URL + '/api/tours/search', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(params)
