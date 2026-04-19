@@ -1,4 +1,4 @@
-const API_URL = 'http://103.90.75.163:8080';
+const API_URL = '';
 const tg = window.Telegram.WebApp;
 
 function searchTours() {
