@@ -1,5 +1,10 @@
 const API_URL = '/api';
-const tg = window.Telegram.WebApp;
+const tg = window.Telegram?.WebApp || {
+    showLoading: ()=>{},
+    hideLoading: ()=>{},
+    ready: ()=>{},
+    openLink: (url) => window.open(url, '_blank')
+};
 
 function searchTours() {
     const params = {
