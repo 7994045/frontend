@@ -1,3 +1,11 @@
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: '1mb',
+    },
+  },
+};
+
 export default async function handler(req, res) {
   try {
     const response = await fetch('http://103.90.75.163:8080/api/tours/search', {
