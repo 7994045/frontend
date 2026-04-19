@@ -1,4 +1,4 @@
-const API_URL = '';
+const API_URL = '/api';
 const tg = window.Telegram.WebApp;
 
 function searchTours() {
@@ -13,7 +13,7 @@ function searchTours() {
     
     tg.showLoading();
     
-    fetch(API_URL + '/api/tours/search', {
+    fetch(API_URL + '/search', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(params)
