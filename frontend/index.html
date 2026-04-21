@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск туров</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        const API_URL = 'http://103.90.75.163:8080';
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Поиск туров</h1>
+        
+        <div class="search-form">
+            <input type="text" id="from" placeholder="Откуда (город)">
+            <input type="text" id="to" placeholder="Куда (страна/отель)">
+            <input type="date" id="dateFrom">
+            <input type="date" id="dateTo">
+            <input type="number" id="nights" placeholder="Ночей">
+            <input type="number" id="adults" placeholder="Взрослых">
+            
+            <button onclick="searchTours()">Найти туры</button>
+        </div>
+        
+        <div id="results"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
