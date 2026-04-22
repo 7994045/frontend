@@ -8,7 +8,7 @@ export const config = {
 
 export default async function handler(req, res) {
   try {
-    const response = await fetch('http://103.90.75.163:8080/api/tours/search', {
+    const response = await fetch('https://api.germes-travel.ru/api/tours/search', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
